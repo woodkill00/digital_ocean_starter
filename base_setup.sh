@@ -6,13 +6,13 @@ set -o nounset
 
 IFS=$(printf '\n\t')
 
+# Update | Upgrade | Clean
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt autoremove -y
+
 # Curl
 sudo apt install curl
 printf '\nCurl installed successfully\n\n'
-
-# Git
-sudo apt install git-all -y
-printf '\nGit installed successfully\n\n'
 
 # Pip
 sudo apt-get install python3-pip -y
