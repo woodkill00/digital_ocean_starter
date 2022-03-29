@@ -1,4 +1,5 @@
 #!/bin/bash
+# {USER} edit to desired username
 
 apt-get update -y
 apt-get upgrade -y
