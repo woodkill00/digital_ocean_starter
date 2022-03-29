@@ -18,4 +18,6 @@ mkdir /home/{USER}/scripts
 cd /home/{USER}/scripts
 git clone https://github.com/woodkill00/digital_ocean_starter.git .
 chown 1000:1000 -R /home/{USER}/scripts
+chmod +x /home/{USER}/scripts/base_setup.sh
+chmod +x /home/{USER}/scripts/docker_install.sh
 reboot now
