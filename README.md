@@ -20,5 +20,7 @@ chmod 700 /home/{USER}/.ssh
 chmod 600 /home/{USER}/.ssh/authorized_keys
 chown 1000:1000 -R /home/{USER}/.ssh
 
------------------------------------------------------------------------------------------------------------------------------------------------------------# will still need to ssh as root to create password for {USER} if you need to use sudo cmd
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# will still need to ssh as root to create password for {USER} if you need to use sudo cmd
 passwd {USER}
