@@ -20,4 +20,5 @@ git clone https://github.com/woodkill00/digital_ocean_starter.git .
 chown 1000:1000 -R /home/{USER}/scripts
 chmod +x /home/{USER}/scripts/base_setup.sh
 chmod +x /home/{USER}/scripts/docker_install.sh
+sudo systemctl disable apache2 && sudo systemctl stop apache2
 reboot now
