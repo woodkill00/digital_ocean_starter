@@ -1,0 +1,30 @@
+# check Digital Ocean user data cloud input
+cat /var/log/cloud-init-output.log
+
+# change/add/set newusr password
+passwd app
+
+# check ports listening
+sudo lsof -i -P -n | grep LISTEN
+
+
+# run installed scripts
+ssh dojj-app
+cd scripts/
+./base_setup.sh
+./docker_install.sh
+
+
+# clone in repo
+cd ..
+cd base/
+git clone https://github.com/repoName .
+# git username
+# git user token
+
+
+# get env file
+scp -i ~/.ssh/keyName /home/path/to/file/.env app@IPAddress.000.000.00.000:~/base/.env
+
+cd base/
+mkdir Logs
