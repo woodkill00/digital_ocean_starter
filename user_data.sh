@@ -25,7 +25,7 @@ echo "**********DIST-UPGRADING END**********"
 echo "**********REMOVING**********"
 apt autoremove -y
 echo "**********REMOVING END**********"
-newusr=app
+newusr=
 adduser --uid 1000 --disabled-password --gecos GECOS $newusr
 echo "**********CREATING USER**********"
 usermod -aG sudo $newusr
